@@ -286,3 +286,110 @@
     inset: -1px;
   }
 }
+
+/* Responsive utilities for iPad and Phone */
+@layer utilities {
+  /* Smooth scrolling for all devices */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Touch-friendly tap targets for mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Optimize font rendering for mobile */
+  @media (max-width: 768px) {
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+  }
+
+  /* Prevent text size adjustment on orientation change */
+  @media (max-width: 1024px) {
+    html {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+  }
+
+  /* Improve touch scrolling on iOS */
+  .overflow-y-auto, .overflow-y-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Responsive container padding */
+  .responsive-container {
+    @apply px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+
+  /* Responsive section spacing */
+  .responsive-section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Responsive text sizes */
+  .responsive-heading-xl {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  .responsive-heading-lg {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .responsive-heading-md {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+
+  .responsive-body {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  /* iPad specific optimizations */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hover-elevate {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .hover-elevate:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  /* Phone specific optimizations */
+  @media (max-width: 767px) {
+    /* Reduce animations on mobile for better performance */
+    * {
+      animation-duration: 0.3s !important;
+      transition-duration: 0.2s !important;
+    }
+
+    /* Optimize card spacing */
+    .card-grid {
+      @apply gap-4;
+    }
+
+    /* Full width buttons on mobile */
+    .mobile-full-button {
+      @apply w-full;
+    }
+  }
+
+  /* Landscape phone optimization */
+  @media (max-width: 896px) and (orientation: landscape) {
+    .min-h-screen {
+      min-height: 100vh;
+    }
+  }
+}

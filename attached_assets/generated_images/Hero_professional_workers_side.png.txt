@@ -1,0 +1,37 @@
+IMAGE PLACEHOLDER - Hero Professional Workers Side
+
+Deskripsi Gambar yang Dibutuhkan:
+=====================================
+
+Tema: Professional Indonesian Workers - Success & Achievement
+
+Komposisi:
+- Grup 3-4 pekerja Indonesia profesional dalam pakaian bisnis modern
+- Pose percaya diri dan optimis
+- Latar belakang: gedung kantor modern atau bandara internasional
+- Suasana cerah, profesional, dan inspiratif
+
+Detail Visual:
+- Pencahayaan: Natural, bright, professional
+- Warna dominan: Biru, putih, abu-abu modern
+- Style: High-quality professional photography
+- Orientasi: Portrait/Vertical (cocok untuk sisi kanan hero section)
+- Resolusi: Minimal 1200x1600px
+
+Mood & Atmosphere:
+- Optimis dan penuh harapan
+- Profesional dan terpercaya
+- Sukses dan achievement
+- Keberagaman (diverse group)
+
+Keywords untuk AI Image Generation:
+"Professional Indonesian workers in business attire, confident pose, modern office building background, diverse group of people, success and achievement theme, bright optimistic atmosphere, high quality professional photography, vertical composition, natural lighting"
+
+=====================================
+File ini adalah placeholder. Silakan generate gambar menggunakan:
+1. AI Image Generator (DALL-E, Midjourney, Stable Diffusion)
+2. Stock photo dari Unsplash/Pexels dengan keyword di atas
+3. Professional photography
+
+Setelah gambar di-generate, ganti file ini dengan file PNG yang sebenarnya dengan nama:
+Hero_professional_workers_side.png
