@@ -81,11 +81,64 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+        // PT. Moza Group Indonesia Brand Colors
+        brand: {
+          red: {
+            DEFAULT: "hsl(var(--brand-red) / <alpha-value>)",
+            light: "hsl(var(--brand-red-light) / <alpha-value>)",
+            dark: "hsl(var(--brand-red-dark) / <alpha-value>)",
+          },
+          blue: {
+            DEFAULT: "hsl(var(--brand-blue) / <alpha-value>)",
+            light: "hsl(var(--brand-blue-light) / <alpha-value>)",
+            dark: "hsl(var(--brand-blue-dark) / <alpha-value>)",
+          },
+          gold: {
+            DEFAULT: "hsl(var(--brand-gold) / <alpha-value>)",
+            light: "hsl(var(--brand-gold-light) / <alpha-value>)",
+            dark: "hsl(var(--brand-gold-dark) / <alpha-value>)",
+          },
+          green: {
+            DEFAULT: "hsl(var(--brand-green) / <alpha-value>)",
+            light: "hsl(var(--brand-green-light) / <alpha-value>)",
+            dark: "hsl(var(--brand-green-dark) / <alpha-value>)",
+          },
+          navy: {
+            DEFAULT: "hsl(var(--brand-navy) / <alpha-value>)",
+            light: "hsl(var(--brand-navy-light) / <alpha-value>)",
+          },
+        },
+        // Country Destination Colors
+        country: {
+          japan: "hsl(var(--country-japan) / <alpha-value>)",
+          hongkong: "hsl(var(--country-hongkong) / <alpha-value>)",
+          taiwan: "hsl(var(--country-taiwan) / <alpha-value>)",
+          australia: "hsl(var(--country-australia) / <alpha-value>)",
+          europe: "hsl(var(--country-europe) / <alpha-value>)",
+          kuwait: "hsl(var(--country-kuwait) / <alpha-value>)",
+        },
+        // Semantic Colors
+        success: {
+          DEFAULT: "hsl(var(--success) / <alpha-value>)",
+          light: "hsl(var(--success-light) / <alpha-value>)",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning) / <alpha-value>)",
+          light: "hsl(var(--warning-light) / <alpha-value>)",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error) / <alpha-value>)",
+          light: "hsl(var(--error-light) / <alpha-value>)",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info) / <alpha-value>)",
+          light: "hsl(var(--info-light) / <alpha-value>)",
+        },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
+        sans: ["Poppins", "system-ui", "-apple-system", "sans-serif"],
+        serif: ["Georgia", "serif"],
+        mono: ["Roboto Mono", "Menlo", "monospace"],
       },
       keyframes: {
         "accordion-down": {

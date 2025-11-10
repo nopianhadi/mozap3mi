@@ -2,61 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE */
+/* LIGHT MODE - PT. Moza Group Indonesia Color Scheme */
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
   --opaque-button-border-intensity: -8;
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
-  --background: 0 0% 100%;
-  --foreground: 0 0% 10%;
-  --border: 0 0% 90%;
-  --card: 0 0% 98%;
-  --card-foreground: 0 0% 10%;
-  --card-border: 0 0% 94%;
-  --sidebar: 0 0% 96%;
-  --sidebar-foreground: 0 0% 10%;
-  --sidebar-border: 0 0% 92%;
-  --sidebar-primary: 0 100% 50%;
+  
+  /* Base Colors - Clean & Professional */
+  --background: 0 0% 99%;
+  --foreground: 220 15% 15%;
+  --border: 220 13% 88%;
+  
+  /* Card Colors - Subtle Elevation */
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 15%;
+  --card-border: 220 13% 91%;
+  
+  /* Sidebar Colors */
+  --sidebar: 220 15% 97%;
+  --sidebar-foreground: 220 15% 15%;
+  --sidebar-border: 220 13% 90%;
+  --sidebar-primary: 225 73% 57%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 5% 92%;
-  --sidebar-accent-foreground: 0 0% 10%;
-  --sidebar-ring: 0 100% 50%;
-  --popover: 0 0% 97%;
-  --popover-foreground: 0 0% 10%;
-  --popover-border: 0 0% 93%;
-  --primary: 0 100% 50%;
+  --sidebar-accent: 210 40% 96%;
+  --sidebar-accent-foreground: 220 15% 15%;
+  --sidebar-ring: 225 73% 57%;
+  
+  /* Popover Colors */
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 15% 15%;
+  --popover-border: 220 13% 91%;
+  
+  /* Primary - Royal Blue */
+  --primary: 225 73% 57%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 0 0% 96%;
-  --secondary-foreground: 0 0% 20%;
-  --muted: 0 0% 97%;
-  --muted-foreground: 0 0% 45%;
-  --accent: 0 0% 95%;
-  --accent-foreground: 0 0% 15%;
+  
+  /* Secondary - Deep Blue (Trust & Professionalism) */
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 210 50% 25%;
+  
+  /* Muted - Neutral Gray */
+  --muted: 220 13% 95%;
+  --muted-foreground: 220 10% 45%;
+  
+  /* Accent - Gold/Amber (Success & Achievement) */
+  --accent: 45 93% 95%;
+  --accent-foreground: 38 92% 35%;
+  
+  /* Destructive - Warning Red */
   --destructive: 0 72% 50%;
   --destructive-foreground: 0 0% 98%;
-  --input: 0 0% 70%;
-  --ring: 0 100% 50%;
-  --chart-1: 0 100% 50%;
-  --chart-2: 0 80% 45%;
-  --chart-3: 0 60% 40%;
-  --chart-4: 350 70% 45%;
-  --chart-5: 10 75% 48%;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Input & Ring */
+  --input: 220 13% 85%;
+  --ring: 225 73% 57%;
+  
+  /* Chart Colors - Vibrant & Distinct */
+  --chart-1: 225 73% 57%;    /* Royal Blue - Primary */
+  --chart-2: 210 100% 50%;   /* Blue - Trust */
+  --chart-3: 142 76% 36%;    /* Green - Success */
+  --chart-4: 45 93% 47%;     /* Gold - Warning */
+  --chart-5: 280 60% 50%;    /* Purple - Premium */
+  
+  /* Typography - Google Sans Style */
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
   --font-serif: Georgia, serif;
-  --font-mono: Menlo, monospace;
+  --font-mono: 'Roboto Mono', Menlo, monospace;
+  
+  /* Border Radius */
   --radius: .5rem;
-  --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
-  --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
-  --shadow-sm: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
-  --shadow: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
-  --shadow-md: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 2px 4px -1px hsl(0 0% 0% / 0.00);
-  --shadow-lg: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 4px 6px -1px hsl(0 0% 0% / 0.00);
-  --shadow-xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 8px 10px -1px hsl(0 0% 0% / 0.00);
-  --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
+  
+  /* Shadows - Subtle Depth */
+  --shadow-2xs: 0px 1px 2px 0px hsl(220 15% 15% / 0.05);
+  --shadow-xs: 0px 1px 3px 0px hsl(220 15% 15% / 0.08);
+  --shadow-sm: 0px 2px 4px 0px hsl(220 15% 15% / 0.06), 0px 1px 2px -1px hsl(220 15% 15% / 0.04);
+  --shadow: 0px 4px 6px -1px hsl(220 15% 15% / 0.08), 0px 2px 4px -2px hsl(220 15% 15% / 0.05);
+  --shadow-md: 0px 6px 12px -2px hsl(220 15% 15% / 0.10), 0px 3px 6px -3px hsl(220 15% 15% / 0.08);
+  --shadow-lg: 0px 10px 20px -4px hsl(220 15% 15% / 0.12), 0px 4px 8px -4px hsl(220 15% 15% / 0.08);
+  --shadow-xl: 0px 20px 30px -6px hsl(220 15% 15% / 0.15), 0px 8px 12px -6px hsl(220 15% 15% / 0.10);
+  --shadow-2xl: 0px 25px 50px -12px hsl(220 15% 15% / 0.20);
+  
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+  
+  /* Custom Brand Colors - PT. Moza Group Indonesia */
+  --brand-red: 225 73% 57%;         /* Primary Royal Blue */
+  --brand-red-light: 225 73% 95%;   /* Light Blue Background */
+  --brand-red-dark: 225 73% 47%;    /* Dark Blue for Hover */
+  
+  --brand-blue: 225 73% 57%;        /* Royal Blue */
+  --brand-blue-light: 225 73% 95%;  /* Light Blue Background */
+  --brand-blue-dark: 225 73% 47%;   /* Dark Blue for Hover */
+  
+  --brand-gold: 45 93% 47%;         /* Success Gold */
+  --brand-gold-light: 45 93% 95%;   /* Light Gold Background */
+  --brand-gold-dark: 38 92% 35%;    /* Dark Gold for Text */
+  
+  --brand-green: 142 76% 36%;       /* Growth Green */
+  --brand-green-light: 142 76% 95%; /* Light Green Background */
+  --brand-green-dark: 142 76% 28%;  /* Dark Green for Hover */
+  
+  --brand-navy: 220 40% 20%;        /* Professional Navy */
+  --brand-navy-light: 220 40% 96%;  /* Light Navy Background */
+  
+  /* Country Destination Colors */
+  --country-japan: 0 100% 50%;      /* Japan Red */
+  --country-hongkong: 0 84% 48%;    /* Hong Kong Red */
+  --country-taiwan: 210 100% 50%;   /* Taiwan Blue */
+  --country-australia: 45 93% 47%;  /* Australia Gold */
+  --country-europe: 210 50% 45%;    /* Europe Blue */
+  --country-kuwait: 142 76% 36%;    /* Kuwait Green */
+  
+  /* Semantic Colors */
+  --success: 142 76% 36%;
+  --success-light: 142 76% 95%;
+  --warning: 38 92% 50%;
+  --warning-light: 45 93% 95%;
+  --error: 0 72% 50%;
+  --error-light: 0 72% 95%;
+  --info: 210 100% 50%;
+  --info-light: 210 100% 96%;
 
 /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
@@ -93,48 +160,72 @@
   --opaque-button-border-intensity: 9;
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
-  --background: 0 0% 8%;
-  --foreground: 0 0% 95%;
-  --border: 0 0% 18%;
-  --card: 0 0% 10%;
-  --card-foreground: 0 0% 95%;
-  --card-border: 0 0% 14%;
-  --sidebar: 0 0% 12%;
-  --sidebar-foreground: 0 0% 95%;
-  --sidebar-border: 0 0% 16%;
-  --sidebar-primary: 0 100% 55%;
+  
+  /* Base Colors - Dark Professional */
+  --background: 220 20% 10%;
+  --foreground: 220 10% 95%;
+  --border: 220 15% 20%;
+  
+  /* Card Colors - Elevated Dark */
+  --card: 220 18% 13%;
+  --card-foreground: 220 10% 95%;
+  --card-border: 220 15% 18%;
+  
+  /* Sidebar Colors */
+  --sidebar: 220 20% 12%;
+  --sidebar-foreground: 220 10% 95%;
+  --sidebar-border: 220 15% 18%;
+  --sidebar-primary: 225 73% 65%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 5% 16%;
-  --sidebar-accent-foreground: 0 0% 95%;
-  --sidebar-ring: 0 100% 55%;
-  --popover: 0 0% 13%;
-  --popover-foreground: 0 0% 95%;
-  --popover-border: 0 0% 17%;
-  --primary: 0 100% 55%;
+  --sidebar-accent: 210 40% 18%;
+  --sidebar-accent-foreground: 220 10% 95%;
+  --sidebar-ring: 225 73% 65%;
+  
+  /* Popover Colors */
+  --popover: 220 18% 15%;
+  --popover-foreground: 220 10% 95%;
+  --popover-border: 220 15% 20%;
+  
+  /* Primary - Bright Royal Blue */
+  --primary: 225 73% 65%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 0 5% 18%;
-  --secondary-foreground: 0 0% 95%;
-  --muted: 0 4% 19%;
-  --muted-foreground: 0 0% 70%;
-  --accent: 0 6% 17%;
-  --accent-foreground: 0 0% 95%;
-  --destructive: 0 72% 45%;
+  
+  /* Secondary - Deep Blue */
+  --secondary: 210 40% 20%;
+  --secondary-foreground: 210 30% 90%;
+  
+  /* Muted - Dark Gray */
+  --muted: 220 15% 18%;
+  --muted-foreground: 220 10% 65%;
+  
+  /* Accent - Warm Gold */
+  --accent: 45 80% 20%;
+  --accent-foreground: 45 93% 85%;
+  
+  /* Destructive */
+  --destructive: 0 72% 50%;
   --destructive-foreground: 0 0% 98%;
-  --input: 0 0% 35%;
-  --ring: 0 100% 55%;
-  --chart-1: 0 100% 60%;
-  --chart-2: 0 80% 65%;
-  --chart-3: 10 75% 68%;
-  --chart-4: 350 80% 70%;
-  --chart-5: 15 85% 72%;
-  --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
-  --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
-  --shadow-sm: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
-  --shadow: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
-  --shadow-md: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 2px 4px -1px hsl(0 0% 0% / 0.00);
-  --shadow-lg: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 4px 6px -1px hsl(0 0% 0% / 0.00);
-  --shadow-xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 8px 10px -1px hsl(0 0% 0% / 0.00);
-  --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
+  
+  /* Input & Ring */
+  --input: 220 15% 30%;
+  --ring: 225 73% 65%;
+  
+  /* Chart Colors - Vibrant Dark Mode */
+  --chart-1: 225 73% 65%;    /* Bright Royal Blue */
+  --chart-2: 210 100% 60%;   /* Bright Blue */
+  --chart-3: 142 76% 50%;    /* Bright Green */
+  --chart-4: 45 93% 60%;     /* Bright Gold */
+  --chart-5: 280 60% 65%;    /* Bright Purple */
+  
+  /* Shadows - Deeper for Dark Mode */
+  --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.20);
+  --shadow-xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.30);
+  --shadow-sm: 0px 2px 4px 0px hsl(0 0% 0% / 0.25), 0px 1px 2px -1px hsl(0 0% 0% / 0.20);
+  --shadow: 0px 4px 6px -1px hsl(0 0% 0% / 0.30), 0px 2px 4px -2px hsl(0 0% 0% / 0.25);
+  --shadow-md: 0px 6px 12px -2px hsl(0 0% 0% / 0.35), 0px 3px 6px -3px hsl(0 0% 0% / 0.30);
+  --shadow-lg: 0px 10px 20px -4px hsl(0 0% 0% / 0.40), 0px 4px 8px -4px hsl(0 0% 0% / 0.35);
+  --shadow-xl: 0px 20px 30px -6px hsl(0 0% 0% / 0.45), 0px 8px 12px -6px hsl(0 0% 0% / 0.40);
+  --shadow-2xl: 0px 25px 50px -12px hsl(0 0% 0% / 0.50);
 
 /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
@@ -172,6 +263,26 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Google Sans style headings */
+  h1, h2 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  /* Smooth font rendering for better readability */
+  button, a {
+    font-weight: 500;
   }
 }
 
@@ -392,4 +503,114 @@
       min-height: 100vh;
     }
   }
+}
+
+/* Brand Color Utilities - PT. Moza Group Indonesia */
+@layer utilities {
+  /* Background Colors */
+  .bg-brand-red { background-color: hsl(var(--brand-red)); }
+  .bg-brand-red-light { background-color: hsl(var(--brand-red-light)); }
+  .bg-brand-red-dark { background-color: hsl(var(--brand-red-dark)); }
+  
+  .bg-brand-blue { background-color: hsl(var(--brand-blue)); }
+  .bg-brand-blue-light { background-color: hsl(var(--brand-blue-light)); }
+  .bg-brand-blue-dark { background-color: hsl(var(--brand-blue-dark)); }
+  
+  .bg-brand-gold { background-color: hsl(var(--brand-gold)); }
+  .bg-brand-gold-light { background-color: hsl(var(--brand-gold-light)); }
+  .bg-brand-gold-dark { background-color: hsl(var(--brand-gold-dark)); }
+  
+  .bg-brand-green { background-color: hsl(var(--brand-green)); }
+  .bg-brand-green-light { background-color: hsl(var(--brand-green-light)); }
+  .bg-brand-green-dark { background-color: hsl(var(--brand-green-dark)); }
+  
+  .bg-brand-navy { background-color: hsl(var(--brand-navy)); }
+  .bg-brand-navy-light { background-color: hsl(var(--brand-navy-light)); }
+  
+  /* Text Colors */
+  .text-brand-red { color: hsl(var(--brand-red)); }
+  .text-brand-red-dark { color: hsl(var(--brand-red-dark)); }
+  
+  .text-brand-blue { color: hsl(var(--brand-blue)); }
+  .text-brand-blue-dark { color: hsl(var(--brand-blue-dark)); }
+  
+  .text-brand-gold { color: hsl(var(--brand-gold)); }
+  .text-brand-gold-dark { color: hsl(var(--brand-gold-dark)); }
+  
+  .text-brand-green { color: hsl(var(--brand-green)); }
+  .text-brand-green-dark { color: hsl(var(--brand-green-dark)); }
+  
+  .text-brand-navy { color: hsl(var(--brand-navy)); }
+  
+  /* Border Colors */
+  .border-brand-red { border-color: hsl(var(--brand-red)); }
+  .border-brand-blue { border-color: hsl(var(--brand-blue)); }
+  .border-brand-gold { border-color: hsl(var(--brand-gold)); }
+  .border-brand-green { border-color: hsl(var(--brand-green)); }
+  .border-brand-navy { border-color: hsl(var(--brand-navy)); }
+  
+  /* Country Destination Colors */
+  .bg-country-japan { background-color: hsl(var(--country-japan)); }
+  .bg-country-hongkong { background-color: hsl(var(--country-hongkong)); }
+  .bg-country-taiwan { background-color: hsl(var(--country-taiwan)); }
+  .bg-country-australia { background-color: hsl(var(--country-australia)); }
+  .bg-country-europe { background-color: hsl(var(--country-europe)); }
+  .bg-country-kuwait { background-color: hsl(var(--country-kuwait)); }
+  
+  .text-country-japan { color: hsl(var(--country-japan)); }
+  .text-country-hongkong { color: hsl(var(--country-hongkong)); }
+  .text-country-taiwan { color: hsl(var(--country-taiwan)); }
+  .text-country-australia { color: hsl(var(--country-australia)); }
+  .text-country-europe { color: hsl(var(--country-europe)); }
+  .text-country-kuwait { color: hsl(var(--country-kuwait)); }
+  
+  /* Semantic Colors */
+  .bg-success { background-color: hsl(var(--success)); }
+  .bg-success-light { background-color: hsl(var(--success-light)); }
+  .text-success { color: hsl(var(--success)); }
+  
+  .bg-warning { background-color: hsl(var(--warning)); }
+  .bg-warning-light { background-color: hsl(var(--warning-light)); }
+  .text-warning { color: hsl(var(--warning)); }
+  
+  .bg-error { background-color: hsl(var(--error)); }
+  .bg-error-light { background-color: hsl(var(--error-light)); }
+  .text-error { color: hsl(var(--error)); }
+  
+  .bg-info { background-color: hsl(var(--info)); }
+  .bg-info-light { background-color: hsl(var(--info-light)); }
+  .text-info { color: hsl(var(--info)); }
+  
+  /* Gradient Backgrounds */
+  .bg-gradient-red-gold {
+    background: linear-gradient(135deg, hsl(225 73% 57%) 0%, hsl(210 100% 70%) 100%);
+  }
+  
+  .bg-gradient-blue-red {
+    background: linear-gradient(135deg, hsl(225 73% 57%) 0%, hsl(210 100% 70%) 100%);
+  }
+  
+  .bg-gradient-navy-blue {
+    background: linear-gradient(135deg, hsl(var(--brand-navy)) 0%, hsl(var(--brand-blue)) 100%);
+  }
+  
+  .bg-gradient-indonesia {
+    background: linear-gradient(180deg, hsl(var(--brand-red)) 0%, hsl(var(--brand-red)) 50%, hsl(0 0% 100%) 50%, hsl(0 0% 100%) 100%);
+  }
+  
+  /* Hover Effects with Brand Colors */
+  .hover-brand-red:hover { background-color: hsl(var(--brand-red)); color: white; }
+  .hover-brand-blue:hover { background-color: hsl(var(--brand-blue)); color: white; }
+  .hover-brand-gold:hover { background-color: hsl(var(--brand-gold)); color: white; }
+  .hover-brand-green:hover { background-color: hsl(var(--brand-green)); color: white; }
+  
+  /* Shadow with Brand Colors */
+  .shadow-brand-red { box-shadow: 0 10px 25px -5px hsl(var(--brand-red) / 0.3); }
+  .shadow-brand-blue { box-shadow: 0 10px 25px -5px hsl(var(--brand-blue) / 0.3); }
+  .shadow-brand-gold { box-shadow: 0 10px 25px -5px hsl(var(--brand-gold) / 0.3); }
+  
+  /* Ring Colors for Focus States */
+  .ring-brand-red { --tw-ring-color: hsl(var(--brand-red)); }
+  .ring-brand-blue { --tw-ring-color: hsl(var(--brand-blue)); }
+  .ring-brand-gold { --tw-ring-color: hsl(var(--brand-gold)); }
 }

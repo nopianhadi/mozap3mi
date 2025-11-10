@@ -238,28 +238,28 @@ export default function Home() {
             <div className="hidden lg:flex items-center gap-4 xl:gap-6">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium text-brand-navy hover:text-brand-red transition-colors"
                 data-testid="link-home"
               >
                 Beranda
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium text-brand-navy hover:text-brand-blue transition-colors"
                 data-testid="link-about"
               >
                 Tentang
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium text-brand-navy hover:text-brand-gold transition-colors"
                 data-testid="link-services"
               >
                 Layanan
               </button>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-sm font-medium text-brand-navy hover:text-brand-green transition-colors"
                 data-testid="link-gallery"
               >
                 Galeri
@@ -267,6 +267,7 @@ export default function Home() {
               <Button
                 onClick={() => scrollToSection("contact")}
                 size="sm"
+                className="bg-brand-red hover:bg-brand-red-dark text-white font-bold shadow-brand-red"
                 data-testid="button-contact-nav"
               >
                 Hubungi Kami
@@ -328,47 +329,47 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center pt-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      {/* Hero Section - Material Design dengan gradient merah */}
+      <section id="home" className="relative min-h-screen flex items-center pt-16 bg-gradient-to-br from-red-600 via-red-500 to-rose-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6 md:space-y-8">
               <div>
-                <span className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 border border-primary/20 rounded-full text-xs md:text-sm font-medium text-primary" data-testid="badge-registered">
+                <span className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-xs md:text-sm font-medium text-white shadow-lg" data-testid="badge-registered">
                   <Award className="h-3 w-3 md:h-4 md:w-4" />
                   Terdaftar Resmi P3MI 2025
                 </span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight" data-testid="text-company-name">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight drop-shadow-lg" data-testid="text-company-name">
                 PT. Moza Group
-                <span className="text-primary"> Indonesia</span>
+                <span className="text-white drop-shadow-xl"> Indonesia</span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed" data-testid="text-tagline">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed drop-shadow-md" data-testid="text-tagline">
                 Dari Moza ke dunia kerja global, profesional berkarya Indonesia mendunia
               </p>
 
               <div className="space-y-3 md:space-y-4">
-                <p className="text-sm sm:text-base md:text-lg text-muted-foreground/80" data-testid="text-description">
-                  <span className="font-semibold text-foreground">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
+                <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md" data-testid="text-description">
+                  <span className="font-semibold text-white">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
                   terpercaya yang berdomisili di Kota Tangerang, Provinsi Banten.
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground/80">
+                <p className="text-sm sm:text-base text-white/85 drop-shadow-md">
                   Kami didirikan untuk membantu calon pekerja Indonesia mencari peluang bekerja di luar negeri dengan 
                   memberikan pelatihan berbasis kompetensi, pendampingan penuh, dan jaminan keamanan hingga penempatan kerja.
                 </p>
                 <div className="flex flex-wrap gap-2 md:gap-3">
-                  <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1 bg-green-50 border border-green-200 rounded-full text-xs md:text-sm text-green-700">
+                  <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1 bg-success-light border border-brand-green rounded-full text-xs md:text-sm text-brand-green-dark font-medium shadow-md">
                     <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4" />
                     Terdaftar Resmi
                   </span>
-                  <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1 bg-blue-50 border border-blue-200 rounded-full text-xs md:text-sm text-blue-700">
+                  <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1 bg-brand-blue-light border border-brand-blue rounded-full text-xs md:text-sm text-brand-blue-dark font-medium shadow-md">
                     <Shield className="h-3 w-3 md:h-4 md:w-4" />
                     Terpercaya & Aman
                   </span>
-                  <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1 bg-purple-50 border border-purple-200 rounded-full text-xs md:text-sm text-purple-700">
+                  <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1 bg-brand-gold-light border border-brand-gold rounded-full text-xs md:text-sm text-brand-gold-dark font-medium shadow-md">
                     <Award className="h-3 w-3 md:h-4 md:w-4" />
                     Bersertifikat
                   </span>
@@ -379,7 +380,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   onClick={() => scrollToSection("about")}
-                  className="w-full sm:min-w-[180px] md:min-w-[200px]"
+                  className="w-full sm:min-w-[180px] md:min-w-[200px] bg-white text-brand-red hover:bg-white/90 shadow-xl font-bold"
                   data-testid="button-learn-more"
                 >
                   <Users className="mr-2 h-4 w-4 md:h-5 md:w-5" />
@@ -389,7 +390,7 @@ export default function Home() {
                   size="lg"
                   variant="outline"
                   onClick={() => scrollToSection("contact")}
-                  className="w-full sm:min-w-[180px] md:min-w-[200px]"
+                  className="w-full sm:min-w-[180px] md:min-w-[200px] bg-white/20 backdrop-blur-md border-white/40 text-white hover:bg-white/30 shadow-xl font-bold"
                   data-testid="button-consultation"
                 >
                   <MessageSquare className="mr-2 h-4 w-4 md:h-5 md:w-5" />
@@ -398,21 +399,21 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-                <div className="text-center bg-white rounded-lg p-3 md:p-4 shadow-sm border border-border" data-testid="stat-countries">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-1" data-testid="stat-countries-value">6</div>
-                  <div className="text-[10px] sm:text-xs text-muted-foreground">Negara Tujuan</div>
+                <div className="text-center bg-white/95 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-white/50" data-testid="stat-workers">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-red mb-1" data-testid="stat-workers-value">500+</div>
+                  <div className="text-[10px] sm:text-xs text-brand-navy font-medium">Tenaga Kerja</div>
                 </div>
-                <div className="text-center bg-white rounded-lg p-3 md:p-4 shadow-sm border border-border" data-testid="stat-year">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-1" data-testid="stat-year-value">2025</div>
-                  <div className="text-[10px] sm:text-xs text-muted-foreground">Tahun Berdiri</div>
+                <div className="text-center bg-white/95 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-white/50" data-testid="stat-countries">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-blue mb-1" data-testid="stat-countries-value">6</div>
+                  <div className="text-[10px] sm:text-xs text-brand-navy font-medium">Negara Tujuan</div>
                 </div>
-                <div className="text-center bg-white rounded-lg p-3 md:p-4 shadow-sm border border-border" data-testid="stat-trust">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-1" data-testid="stat-trust-value">100%</div>
-                  <div className="text-[10px] sm:text-xs text-muted-foreground">Terpercaya</div>
+                <div className="text-center bg-white/95 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-white/50" data-testid="stat-partners-hero">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-gold mb-1" data-testid="stat-partners-value">25+</div>
+                  <div className="text-[10px] sm:text-xs text-brand-navy font-medium">Partner</div>
                 </div>
-                <div className="text-center bg-white rounded-lg p-3 md:p-4 shadow-sm border border-border" data-testid="stat-support">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-1" data-testid="stat-support-value">24/7</div>
-                  <div className="text-[10px] sm:text-xs text-muted-foreground">Dukungan</div>
+                <div className="text-center bg-white/95 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-white/50" data-testid="stat-success">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-green mb-1" data-testid="stat-success-value">98%</div>
+                  <div className="text-[10px] sm:text-xs text-brand-navy font-medium">Keberhasilan</div>
                 </div>
               </div>
             </div>
@@ -435,11 +436,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-12 md:py-16 lg:py-20 bg-muted/30">
+      {/* About Section - Background putih dengan card berwarna */}
+      <section id="about" className="py-12 md:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-14 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-3 md:mb-4">
               Tentang Kami
             </h2>
             <div className="max-w-4xl mx-auto space-y-3 md:space-y-4">
@@ -460,15 +461,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Visi */}
-            <Card className="hover-elevate" data-testid="card-visi">
-              <CardContent className="p-5 md:p-6 lg:p-8">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 md:mb-6">
-                  <Globe2 className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+            <Card className="group relative overflow-hidden border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl" data-testid="card-visi">
+              <CardContent className="p-6 md:p-8">
+                <div className="mb-6">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg">
+                    <Globe2 className="h-7 w-7 text-white" />
+                  </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Visi</h3>
-                <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Visi</h3>
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Menjadi lembaga pelatihan kerja unggul yang mencetak tenaga profesional, berkualitas, 
                   mandiri, dan religius untuk bersaing serta berkontribusi di tingkat nasional dan internasional.
                 </p>
@@ -476,35 +479,61 @@ export default function Home() {
             </Card>
 
             {/* Misi */}
-            <Card className="hover-elevate" data-testid="card-misi">
-              <CardContent className="p-5 md:p-6 lg:p-8">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 md:mb-6">
-                  <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+            <Card className="group relative overflow-hidden border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl" data-testid="card-misi">
+              <CardContent className="p-6 md:p-8">
+                <div className="mb-6">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg">
+                    <CheckCircle2 className="h-7 w-7 text-white" />
+                  </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Misi</h3>
-                <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-foreground/80">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Misi</h3>
+                <ul className="space-y-3 text-sm md:text-base text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Menyelenggarakan pelatihan berbasis kompetensi sesuai standar nasional dan internasional dengan mengintegrasikan nilai religius dan etika kerja.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Membentuk sumber daya manusia yang disiplin, jujur, tangguh, serta berdaya saing global.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Mengembangkan kurikulum yang relevan dengan kebutuhan dunia usaha, dunia industri, serta perkembangan teknologi global.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Menanamkan nilai kemandirian dan jiwa wirausaha agar lulusan tidak hanya siap bekerja tetapi juga mampu menciptakan lapangan kerja.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Menjalin kemitraan dengan pemerintah, industri, dan lembaga internasional guna membuka akses kerja dan peluang pengembangan karier.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Memberikan pembinaan akhlak, spiritual, dan nilai-nilai religius agar lulusan berintegritas serta membawa manfaat bagi bangsa dan umat.</span>
                   </li>
                 </ul>
@@ -512,31 +541,53 @@ export default function Home() {
             </Card>
 
             {/* Tujuan */}
-            <Card className="hover-elevate sm:col-span-2 lg:col-span-1" data-testid="card-tujuan">
-              <CardContent className="p-5 md:p-6 lg:p-8">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 md:mb-6">
-                  <Award className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+            <Card className="group relative overflow-hidden sm:col-span-2 lg:col-span-1 border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl" data-testid="card-tujuan">
+              <CardContent className="p-6 md:p-8">
+                <div className="mb-6">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg">
+                    <Award className="h-7 w-7 text-white" />
+                  </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Tujuan</h3>
-                <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-foreground/80">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Tujuan</h3>
+                <ul className="space-y-3 text-sm md:text-base text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Menghasilkan tenaga kerja profesional yang berkompetensi tinggi, berkarakter religius, dan siap bersaing di dunia global.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Menyediakan SDM unggul untuk mendukung kebutuhan tenaga kerja di dalam dan luar negeri.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Mendorong lahirnya tenaga kerja yang mandiri, berjiwa wirausaha, serta mampu berkontribusi bagi pembangunan ekonomi bangsa.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Meningkatkan citra tenaga kerja Indonesia di dunia internasional melalui kualitas, integritas, dan religiusitas.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1 flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle2 className="h-3 w-3 text-blue-600" />
+                      </div>
+                    </div>
                     <span className="leading-relaxed">Membantu pemerintah dalam mencetak generasi pekerja yang berkualitas dan berdaya saing untuk mengurangi pengangguran.</span>
                   </li>
                 </ul>
@@ -546,50 +597,76 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-12 md:py-16 lg:py-20">
+      {/* Services Section - Background merah dengan gradasi */}
+      <section id="services" className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-red-100 via-rose-100 to-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-14 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
               Negara Tujuan Penempatan
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-4">
               Kami menyediakan layanan penempatan pekerja migran Indonesia ke berbagai negara dengan peluang karir terbaik
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="hover-elevate transition-all duration-300 overflow-hidden cursor-pointer hover:shadow-lg hover:scale-[1.01] md:hover:scale-[1.02]"
+                className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer bg-white rounded-2xl"
                 data-testid={`card-service-${service.country.toLowerCase()}`}
                 onClick={() => setSelectedCountry(service.country)}
               >
-                <div className="relative h-40 sm:h-44 md:h-48 overflow-hidden">
+                {/* Country Image */}
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={service.image} 
                     alt={`${service.country} destination`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4">
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-1" data-testid={`text-country-${service.country.toLowerCase()}`}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 drop-shadow-lg" data-testid={`text-country-${service.country.toLowerCase()}`}>
                       {service.country}
                     </h3>
+                    <p className="text-sm text-white/90 font-medium drop-shadow-md">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
-                <CardContent className="p-4 md:p-5 lg:p-6">
-                  <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4">{service.description}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 md:gap-2 text-xs md:text-sm text-primary">
-                      <Plane className="h-3 w-3 md:h-4 md:w-4" />
-                      <span className="font-medium">Tersedia</span>
+
+                <CardContent className="p-6 md:p-8">
+                  {/* Features List */}
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start gap-3">
+                      <div className="mt-1 flex-shrink-0">
+                        <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center">
+                          <CheckCircle2 className="h-3 w-3 text-red-600" />
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-700 leading-relaxed">
+                        Berbagai sektor pekerjaan tersedia
+                      </p>
                     </div>
-                    <Button variant="ghost" size="sm" className="text-primary text-xs md:text-sm h-8 md:h-9 px-2 md:px-3">
-                      Lihat Detail →
-                    </Button>
+                    <div className="flex items-start gap-3">
+                      <div className="mt-1 flex-shrink-0">
+                        <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center">
+                          <CheckCircle2 className="h-3 w-3 text-red-600" />
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-700 leading-relaxed">
+                        Gaji kompetitif & benefit lengkap
+                      </p>
+                    </div>
                   </div>
+
+                  {/* CTA Button */}
+                  <Button 
+                    className="w-full bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 hover:to-rose-700 text-white rounded-lg py-6 font-semibold shadow-md hover:shadow-lg transition-all duration-200"
+                    size="lg"
+                  >
+                    Lihat Detail Program →
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -723,11 +800,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Advantages Section */}
-      <section id="advantages" className="py-20 bg-muted/30">
+      {/* Advantages Section - Background putih */}
+      <section id="advantages" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-4">
               Keunggulan Kami
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -736,74 +813,98 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {advantages.map((advantage, index) => (
-              <Card
-                key={index}
-                className="hover-elevate"
-                data-testid={`card-advantage-${index}`}
-              >
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4 mb-6">
-                    <span className="text-5xl font-bold text-primary/20">{advantage.number}</span>
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <advantage.icon className="h-6 w-6 text-primary" />
+            {advantages.map((advantage, index) => {
+              const colors = [
+                { 
+                  gradient: 'bg-gradient-to-br from-red-500 to-rose-600', 
+                  number: 'text-white/30', 
+                  iconBg: 'bg-white/20 backdrop-blur-sm',
+                  iconColor: 'text-white'
+                },
+                { 
+                  gradient: 'bg-gradient-to-br from-blue-500 to-indigo-600', 
+                  number: 'text-white/30', 
+                  iconBg: 'bg-white/20 backdrop-blur-sm',
+                  iconColor: 'text-white'
+                },
+                { 
+                  gradient: 'bg-gradient-to-br from-purple-500 to-pink-600', 
+                  number: 'text-white/30', 
+                  iconBg: 'bg-white/20 backdrop-blur-sm',
+                  iconColor: 'text-white'
+                }
+              ];
+              const color = colors[index];
+              
+              return (
+                <Card
+                  key={index}
+                  className={`border-0 shadow-lg hover:shadow-2xl transition-all duration-300 ${color.gradient} rounded-2xl overflow-hidden`}
+                  data-testid={`card-advantage-${index}`}
+                >
+                  <CardContent className="p-8 relative">
+                    <div className="flex items-start gap-4 mb-6">
+                      <span className={`text-5xl font-bold ${color.number}`}>{advantage.number}</span>
+                      <div className={`w-12 h-12 ${color.iconBg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg`}>
+                        <advantage.icon className={`h-6 w-6 ${color.iconColor}`} />
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">{advantage.title}</h3>
-                  <p className="text-foreground/80 leading-relaxed">{advantage.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+                    <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">{advantage.title}</h3>
+                    <p className="text-white/90 leading-relaxed drop-shadow-sm">{advantage.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
 
           {/* Additional Info Section */}
           <div className="mt-16 grid md:grid-cols-2 gap-8">
-            <Card className="hover-elevate">
+            <Card className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Building2 className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                    <Building2 className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">Tentang P3MI</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Tentang P3MI</h3>
                 </div>
-                <p className="text-foreground/80 leading-relaxed mb-4">
-                  <span className="font-semibold">P3MI (Perusahaan Penempatan Pekerja Migran Indonesia)</span> adalah 
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  <span className="font-semibold text-gray-900">P3MI (Perusahaan Penempatan Pekerja Migran Indonesia)</span> adalah 
                   lembaga resmi yang memiliki izin dari pemerintah untuk menempatkan tenaga kerja Indonesia ke luar negeri.
                 </p>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   PT. Moza Group Indonesia terdaftar resmi sebagai P3MI dengan legalitas lengkap, memastikan setiap proses 
                   penempatan kerja dilakukan sesuai regulasi pemerintah dan memberikan perlindungan maksimal bagi pekerja migran.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-elevate">
+            <Card className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Users className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                    <Users className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">Komitmen Kami</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Komitmen Kami</h3>
                 </div>
-                <ul className="space-y-3 text-foreground/80">
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Pelatihan berbasis kompetensi standar internasional</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Pendampingan penuh dari awal hingga keberangkatan</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Pembinaan karakter, akhlak, dan nilai religius</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Kemitraan dengan industri dan lembaga internasional</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Jaminan keamanan dan legalitas lengkap</span>
                   </li>
                 </ul>
@@ -813,11 +914,184 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section id="gallery" className="py-20">
+      {/* Statistics & Partners Section - Background abu-abu sangat muda */}
+      <section id="statistics" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+              Pencapaian & Kemitraan
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Kepercayaan dan hasil nyata dari dedikasi kami dalam menempatkan tenaga kerja profesional Indonesia
+            </p>
+          </div>
+
+          {/* Statistics Cards - Material Design dengan warna */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
+            <Card className="text-center bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-2xl" data-testid="stat-workers-sent">
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-7 w-7 md:h-8 md:w-8 text-white" />
+                </div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">500+</div>
+                <div className="text-sm md:text-base text-white/90 font-medium">Tenaga Kerja Dikirim</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center bg-gradient-to-br from-green-500 to-green-600 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-2xl" data-testid="stat-partners">
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="h-7 w-7 md:h-8 md:w-8 text-white" />
+                </div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">25+</div>
+                <div className="text-sm md:text-base text-white/90 font-medium">Partner Perusahaan</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center bg-gradient-to-br from-purple-500 to-purple-600 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-2xl" data-testid="stat-countries-active">
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Globe2 className="h-7 w-7 md:h-8 md:w-8 text-white" />
+                </div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">6</div>
+                <div className="text-sm md:text-base text-white/90 font-medium">Negara Aktif</div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center bg-gradient-to-br from-orange-500 to-orange-600 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-2xl" data-testid="stat-success-rate">
+              <CardContent className="p-6 md:p-8">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-7 w-7 md:h-8 md:w-8 text-white" />
+                </div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">98%</div>
+                <div className="text-sm md:text-base text-white/90 font-medium">Tingkat Keberhasilan</div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Partners Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3">
+                Partner Kami
+              </h3>
+              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+                Bekerja sama dengan perusahaan dan lembaga terpercaya di berbagai negara
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <Building2 className="h-6 w-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900">Partner Perusahaan</h4>
+                  </div>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Perusahaan manufaktur dan teknologi di Jepang</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Agen penempatan tenaga kerja di Hongkong dan Taiwan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Perusahaan pertanian dan peternakan di Australia</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Hotel dan restoran di berbagai negara Eropa</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Perusahaan konstruksi dan layanan di Kuwait</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <GraduationCap className="h-6 w-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900">Partner Pelatihan</h4>
+                  </div>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                      <span>Lembaga Sertifikasi Profesi (LSP) terakreditasi</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                      <span>Balai Latihan Kerja (BLK) pemerintah</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                      <span>Lembaga pelatihan bahasa asing bersertifikat</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                      <span>Institusi pendidikan vokasi dan kejuruan</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                      <span>Konsultan pengembangan SDM internasional</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Call to Action - Section berwarna merah */}
+            <Card className="mt-8 bg-gradient-to-br from-red-500 via-rose-500 to-pink-500 text-white shadow-2xl border-0 rounded-2xl overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-tr from-red-600/20 via-transparent to-pink-600/20"></div>
+              <CardContent className="p-8 md:p-12 text-center relative z-10">
+                <div className="max-w-3xl mx-auto">
+                  <h4 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-lg">
+                    Bergabunglah dengan Ribuan Pekerja Sukses Kami
+                  </h4>
+                  <p className="text-white/95 mb-6 text-base md:text-lg drop-shadow-md">
+                    Wujudkan impian karir global Anda bersama PT. Moza Group Indonesia. 
+                    Kami siap membantu Anda dari proses pelatihan hingga penempatan kerja di luar negeri.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button
+                      size="lg"
+                      variant="secondary"
+                      onClick={() => scrollToSection("contact")}
+                      className="bg-white text-red-600 hover:bg-white/90 font-bold shadow-xl"
+                    >
+                      <Phone className="mr-2 h-5 w-5" />
+                      Konsultasi Gratis
+                    </Button>
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      onClick={() => scrollToSection("services")}
+                      className="border-2 border-white text-white hover:bg-white/20 font-bold backdrop-blur-sm"
+                    >
+                      <Globe2 className="mr-2 h-5 w-5" />
+                      Lihat Negara Tujuan
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-4">
               Galeri Kegiatan
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -829,7 +1103,7 @@ export default function Home() {
             {galleryImages.map((item, index) => (
               <Card
                 key={index}
-                className="hover-elevate overflow-hidden"
+                className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden bg-white rounded-2xl"
                 data-testid={`card-gallery-${index}`}
               >
                 <div className="relative h-64 overflow-hidden">
@@ -866,7 +1140,7 @@ export default function Home() {
               {officeGalleryImages.map((item, index) => (
                 <Card
                   key={index}
-                  className="hover-elevate overflow-hidden"
+                  className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden bg-white rounded-2xl"
                   data-testid={`card-office-gallery-${index}`}
                 >
                   <div className="relative h-64 overflow-hidden">
@@ -891,8 +1165,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-muted/30">
+      {/* Contact Section - Background abu-abu sangat muda */}
+      <section id="contact" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -905,7 +1179,7 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card data-testid="card-contact-form">
+            <Card className="border border-gray-200 shadow-md bg-white rounded-2xl" data-testid="card-contact-form">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-foreground mb-6">Kirim Pesan</h3>
                 <Form {...form}>
@@ -998,17 +1272,17 @@ export default function Home() {
 
             {/* Contact Information */}
             <div className="space-y-6">
-              <Card data-testid="card-contact-info">
+              <Card className="border border-gray-200 shadow-md bg-white rounded-2xl" data-testid="card-contact-info">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-6">Informasi Kontak</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Informasi Kontak</h3>
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-6 w-6 text-primary" />
+                      <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <MapPin className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground mb-1">Alamat Kantor</h4>
-                        <p className="text-muted-foreground">
+                        <h4 className="font-semibold text-gray-900 mb-1">Alamat Kantor</h4>
+                        <p className="text-gray-600">
                           JL Beringin Raya Blok 42 No.75<br />
                           Kota Tangerang, Provinsi Banten<br />
                           Indonesia
@@ -1017,14 +1291,14 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-6 w-6 text-primary" />
+                      <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Phone className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground mb-1">Telepon / WhatsApp</h4>
+                        <h4 className="font-semibold text-gray-900 mb-1">Telepon / WhatsApp</h4>
                         <a
                           href="tel:08980422566"
-                          className="text-primary hover:underline"
+                          className="text-blue-600 hover:underline"
                           data-testid="link-phone"
                         >
                           0898-0422-566
@@ -1033,14 +1307,14 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-6 w-6 text-primary" />
+                      <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Mail className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground mb-1">Email</h4>
+                        <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                         <a
                           href="mailto:mozagroupindonesia@gmail.com"
-                          className="text-primary hover:underline break-all"
+                          className="text-blue-600 hover:underline break-all"
                           data-testid="link-email"
                         >
                           mozagroupindonesia@gmail.com
@@ -1049,12 +1323,12 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Clock className="h-6 w-6 text-primary" />
+                      <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <Clock className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground mb-1">Jam Operasional</h4>
-                        <p className="text-muted-foreground">
+                        <h4 className="font-semibold text-gray-900 mb-1">Jam Operasional</h4>
+                        <p className="text-gray-600">
                           Senin - Sabtu: 08:00 - 16:00 WIB<br />
                           Minggu: Tutup
                         </p>
@@ -1064,11 +1338,13 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-primary text-primary-foreground" data-testid="card-certification">
+              <Card className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white border-0 shadow-lg rounded-2xl" data-testid="card-certification">
                 <CardContent className="p-8 text-center">
-                  <Shield className="h-12 w-12 mx-auto mb-4" />
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Shield className="h-10 w-10 text-white" />
+                  </div>
                   <h3 className="text-xl font-bold mb-2">Terdaftar & Berizin Resmi</h3>
-                  <p className="text-primary-foreground/90">
+                  <p className="text-white/90">
                     P3MI (Perusahaan Penempatan Pekerja Migran Indonesia) dengan legalitas lengkap
                   </p>
                 </CardContent>
@@ -1078,9 +1354,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Footer - Section berwarna merah gradasi */}
+      <footer className="bg-gradient-to-br from-red-900 via-rose-900 to-red-800 text-white py-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-tr from-red-950/50 via-transparent to-rose-950/50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
@@ -1090,41 +1367,41 @@ export default function Home() {
                   className="h-12 w-12 object-contain bg-white rounded-lg p-1"
                 />
                 <div>
-                  <h3 className="font-bold text-lg">PT. Moza Group Indonesia</h3>
-                  <p className="text-xs text-background/70">P3MI Terdaftar Resmi</p>
+                  <h3 className="font-bold text-lg text-white">PT. Moza Group Indonesia</h3>
+                  <p className="text-xs text-white/70">P3MI Terdaftar Resmi</p>
                 </div>
               </div>
-              <p className="text-sm text-background/80 mb-4">
+              <p className="text-sm text-white/90 mb-4">
                 Dari Moza ke dunia kerja global, profesional berkarya Indonesia mendunia
               </p>
-              <p className="text-xs text-background/60">Didirikan tahun 2025</p>
+              <p className="text-xs text-white/70">Didirikan tahun 2025</p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Navigasi Cepat</h4>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h4 className="font-semibold mb-4 text-white">Navigasi Cepat</h4>
+              <ul className="space-y-2 text-sm text-white/90">
                 <li>
-                  <button onClick={() => scrollToSection("home")} className="hover:text-primary transition-colors">
+                  <button onClick={() => scrollToSection("home")} className="hover:text-white transition-colors">
                     Beranda
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection("about")} className="hover:text-primary transition-colors">
+                  <button onClick={() => scrollToSection("about")} className="hover:text-white transition-colors">
                     Tentang Kami
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection("services")} className="hover:text-primary transition-colors">
+                  <button onClick={() => scrollToSection("services")} className="hover:text-white transition-colors">
                     Layanan
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection("gallery")} className="hover:text-primary transition-colors">
+                  <button onClick={() => scrollToSection("gallery")} className="hover:text-white transition-colors">
                     Galeri
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection("contact")} className="hover:text-primary transition-colors">
+                  <button onClick={() => scrollToSection("contact")} className="hover:text-white transition-colors">
                     Kontak
                   </button>
                 </li>
@@ -1132,68 +1409,68 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Kontak Kami</h4>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h4 className="font-semibold mb-4 text-white">Kontak Kami</h4>
+              <ul className="space-y-2 text-sm text-white/90">
                 <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-white" />
                   <span>JL Beringin Raya Blok 42 No.75, Tangerang, Banten</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 flex-shrink-0" />
-                  <a href="tel:08980422566" className="hover:text-primary transition-colors">0898-0422-566</a>
+                  <Phone className="h-4 w-4 flex-shrink-0 text-white" />
+                  <a href="tel:08980422566" className="hover:text-white transition-colors">0898-0422-566</a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 flex-shrink-0" />
-                  <a href="mailto:mozagroupindonesia@gmail.com" className="hover:text-primary transition-colors break-all">
+                  <Mail className="h-4 w-4 flex-shrink-0 text-white" />
+                  <a href="mailto:mozagroupindonesia@gmail.com" className="hover:text-white transition-colors break-all">
                     mozagroupindonesia@gmail.com
                   </a>
                 </li>
               </ul>
               
-              <h4 className="font-semibold mb-3 mt-6">Ikuti Kami</h4>
+              <h4 className="font-semibold mb-3 mt-6 text-white">Ikuti Kami</h4>
               <div className="flex gap-3">
                 <a 
                   href="https://www.instagram.com/mozap3mi/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
+                  className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-200"
                   aria-label="Instagram"
                 >
-                  <Instagram className="h-4 w-4" />
+                  <Instagram className="h-4 w-4 text-white" />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@mozagroupindonesia_p3mi" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
+                  className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-200"
                   aria-label="TikTok"
                 >
-                  <FaTiktok className="h-4 w-4" />
+                  <FaTiktok className="h-4 w-4 text-white" />
                 </a>
                 <a 
                   href="https://www.youtube.com/@MozaGroupIndonesia" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
+                  className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-200"
                   aria-label="YouTube"
                 >
-                  <Youtube className="h-4 w-4" />
+                  <Youtube className="h-4 w-4 text-white" />
                 </a>
                 <a 
                   href="https://www.facebook.com/profile.php?id=61583154939665&locale=id_ID" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors"
+                  className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-200"
                   aria-label="Facebook"
                 >
-                  <Facebook className="h-4 w-4" />
+                  <Facebook className="h-4 w-4 text-white" />
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="border-t border-background/20 pt-8 text-center">
-            <p className="text-sm text-background/60">
+          <div className="border-t border-white/20 pt-8 text-center relative z-10">
+            <p className="text-sm text-white/80">
               © 2025 PT. Moza Group Indonesia. All rights reserved.
             </p>
           </div>
