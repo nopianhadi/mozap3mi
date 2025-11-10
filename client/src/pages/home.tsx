@@ -342,21 +342,21 @@ export default function Home() {
                 </span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight drop-shadow-lg" data-testid="text-company-name">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-tight drop-shadow-lg" data-testid="text-company-name">
                 PT. Moza Group
                 <span className="text-white drop-shadow-xl"> Indonesia</span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed drop-shadow-md" data-testid="text-tagline">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed drop-shadow-md font-normal" data-testid="text-tagline">
                 Dari Moza ke dunia kerja global, profesional berkarya Indonesia mendunia
               </p>
 
               <div className="space-y-3 md:space-y-4">
-                <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md" data-testid="text-description">
-                  <span className="font-semibold text-white">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
+                <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md font-normal" data-testid="text-description">
+                  <span className="font-medium text-white">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
                   terpercaya yang berdomisili di Kota Tangerang, Provinsi Banten.
                 </p>
-                <p className="text-sm sm:text-base text-white/85 drop-shadow-md">
+                <p className="text-sm sm:text-base text-white/85 drop-shadow-md font-normal">
                   Kami didirikan untuk membantu calon pekerja Indonesia mencari peluang bekerja di luar negeri dengan 
                   memberikan pelatihan berbasis kompetensi, pendampingan penuh, dan jaminan keamanan hingga penempatan kerja.
                 </p>
@@ -437,24 +437,24 @@ export default function Home() {
       </section>
 
       {/* About Section - Background putih dengan card berwarna */}
-      <section id="about" className="py-12 md:py-16 lg:py-20 bg-white">
+      <section id="about" className="py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10 md:mb-14 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-3 md:mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-brand-navy mb-3 md:mb-4">
               Tentang Kami
             </h2>
             <div className="max-w-4xl mx-auto space-y-3 md:space-y-4">
-              <p className="text-base md:text-lg text-muted-foreground px-2">
-                <span className="font-semibold text-foreground">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
+              <p className="text-base md:text-lg text-muted-foreground px-2 font-normal">
+                <span className="font-medium text-foreground">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
                 yang berdomisili di Kota Tangerang, Provinsi Banten.
               </p>
-              <p className="text-sm md:text-base text-muted-foreground px-2">
+              <p className="text-sm md:text-base text-muted-foreground px-2 font-normal">
                 Didirikan pada tahun 2025, kami berkomitmen untuk mencetak tenaga kerja profesional berkualitas tinggi yang siap bersaing 
                 di tingkat internasional. Kami membantu calon pekerja Indonesia mencari peluang bekerja di luar negeri dengan memberikan 
                 pelatihan berbasis kompetensi sesuai standar nasional dan internasional, serta pendampingan penuh dari proses awal hingga 
                 keberangkatan ke negara tujuan.
               </p>
-              <p className="text-sm md:text-base text-muted-foreground px-2">
+              <p className="text-sm md:text-base text-muted-foreground px-2 font-normal">
                 Sebagai lembaga pelatihan kerja yang mengintegrasikan nilai religius dan etika kerja, kami tidak hanya fokus pada 
                 kompetensi teknis, tetapi juga membentuk karakter yang disiplin, jujur, tangguh, dan berintegritas tinggi.
               </p>
@@ -470,8 +470,8 @@ export default function Home() {
                     <Globe2 className="h-7 w-7 text-white" />
                   </div>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Visi</h3>
-                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-4">Visi</h3>
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed font-normal">
                   Menjadi lembaga pelatihan kerja unggul yang mencetak tenaga profesional, berkualitas, 
                   mandiri, dan religius untuk bersaing serta berkontribusi di tingkat nasional dan internasional.
                 </p>
@@ -486,15 +486,15 @@ export default function Home() {
                     <CheckCircle2 className="h-7 w-7 text-white" />
                   </div>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Misi</h3>
-                <ul className="space-y-3 text-sm md:text-base text-gray-700">
+                <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-4">Misi</h3>
+                <ul className="space-y-3 text-sm md:text-base text-gray-700 font-normal">
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
                       <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Menyelenggarakan pelatihan berbasis kompetensi sesuai standar nasional dan internasional dengan mengintegrasikan nilai religius dan etika kerja.</span>
+                    <span className="leading-relaxed font-normal">Menyelenggarakan pelatihan berbasis kompetensi sesuai standar nasional dan internasional dengan mengintegrasikan nilai religius dan etika kerja.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -502,7 +502,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Membentuk sumber daya manusia yang disiplin, jujur, tangguh, serta berdaya saing global.</span>
+                    <span className="leading-relaxed font-normal">Membentuk sumber daya manusia yang disiplin, jujur, tangguh, serta berdaya saing global.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -510,7 +510,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Mengembangkan kurikulum yang relevan dengan kebutuhan dunia usaha, dunia industri, serta perkembangan teknologi global.</span>
+                    <span className="leading-relaxed font-normal">Mengembangkan kurikulum yang relevan dengan kebutuhan dunia usaha, dunia industri, serta perkembangan teknologi global.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -518,7 +518,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Menanamkan nilai kemandirian dan jiwa wirausaha agar lulusan tidak hanya siap bekerja tetapi juga mampu menciptakan lapangan kerja.</span>
+                    <span className="leading-relaxed font-normal">Menanamkan nilai kemandirian dan jiwa wirausaha agar lulusan tidak hanya siap bekerja tetapi juga mampu menciptakan lapangan kerja.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -526,7 +526,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Menjalin kemitraan dengan pemerintah, industri, dan lembaga internasional guna membuka akses kerja dan peluang pengembangan karier.</span>
+                    <span className="leading-relaxed font-normal">Menjalin kemitraan dengan pemerintah, industri, dan lembaga internasional guna membuka akses kerja dan peluang pengembangan karier.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -534,7 +534,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Memberikan pembinaan akhlak, spiritual, dan nilai-nilai religius agar lulusan berintegritas serta membawa manfaat bagi bangsa dan umat.</span>
+                    <span className="leading-relaxed font-normal">Memberikan pembinaan akhlak, spiritual, dan nilai-nilai religius agar lulusan berintegritas serta membawa manfaat bagi bangsa dan umat.</span>
                   </li>
                 </ul>
               </CardContent>
@@ -548,15 +548,15 @@ export default function Home() {
                     <Award className="h-7 w-7 text-white" />
                   </div>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Tujuan</h3>
-                <ul className="space-y-3 text-sm md:text-base text-gray-700">
+                <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-4">Tujuan</h3>
+                <ul className="space-y-3 text-sm md:text-base text-gray-700 font-normal">
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
                       <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Menghasilkan tenaga kerja profesional yang berkompetensi tinggi, berkarakter religius, dan siap bersaing di dunia global.</span>
+                    <span className="leading-relaxed font-normal">Menghasilkan tenaga kerja profesional yang berkompetensi tinggi, berkarakter religius, dan siap bersaing di dunia global.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -564,7 +564,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Menyediakan SDM unggul untuk mendukung kebutuhan tenaga kerja di dalam dan luar negeri.</span>
+                    <span className="leading-relaxed font-normal">Menyediakan SDM unggul untuk mendukung kebutuhan tenaga kerja di dalam dan luar negeri.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -572,7 +572,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Mendorong lahirnya tenaga kerja yang mandiri, berjiwa wirausaha, serta mampu berkontribusi bagi pembangunan ekonomi bangsa.</span>
+                    <span className="leading-relaxed font-normal">Mendorong lahirnya tenaga kerja yang mandiri, berjiwa wirausaha, serta mampu berkontribusi bagi pembangunan ekonomi bangsa.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -580,7 +580,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Meningkatkan citra tenaga kerja Indonesia di dunia internasional melalui kualitas, integritas, dan religiusitas.</span>
+                    <span className="leading-relaxed font-normal">Meningkatkan citra tenaga kerja Indonesia di dunia internasional melalui kualitas, integritas, dan religiusitas.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -588,7 +588,7 @@ export default function Home() {
                         <CheckCircle2 className="h-3 w-3 text-blue-600" />
                       </div>
                     </div>
-                    <span className="leading-relaxed">Membantu pemerintah dalam mencetak generasi pekerja yang berkualitas dan berdaya saing untuk mengurangi pengangguran.</span>
+                    <span className="leading-relaxed font-normal">Membantu pemerintah dalam mencetak generasi pekerja yang berkualitas dan berdaya saing untuk mengurangi pengangguran.</span>
                   </li>
                 </ul>
               </CardContent>
@@ -598,13 +598,13 @@ export default function Home() {
       </section>
 
       {/* Services Section - Background merah dengan gradasi */}
-      <section id="services" className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-red-100 via-rose-100 to-red-50">
+      <section id="services" className="py-16 md:py-20 lg:py-24 bg-gradient-to-br from-red-100 via-rose-100 to-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10 md:mb-14 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 mb-3 md:mb-4">
               Negara Tujuan Penempatan
             </h2>
-            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-4">
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-4 font-normal">
               Kami menyediakan layanan penempatan pekerja migran Indonesia ke berbagai negara dengan peluang karir terbaik
             </p>
           </div>
@@ -626,10 +626,10 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 drop-shadow-lg" data-testid={`text-country-${service.country.toLowerCase()}`}>
+                    <h3 className="text-2xl md:text-3xl font-medium text-white mb-1 drop-shadow-lg" data-testid={`text-country-${service.country.toLowerCase()}`}>
                       {service.country}
                     </h3>
-                    <p className="text-sm text-white/90 font-medium drop-shadow-md">
+                    <p className="text-sm text-white/90 font-normal drop-shadow-md">
                       {service.description}
                     </p>
                   </div>
@@ -644,7 +644,7 @@ export default function Home() {
                           <CheckCircle2 className="h-3 w-3 text-red-600" />
                         </div>
                       </div>
-                      <p className="text-sm text-gray-700 leading-relaxed">
+                      <p className="text-sm text-gray-700 leading-relaxed font-normal">
                         Berbagai sektor pekerjaan tersedia
                       </p>
                     </div>
@@ -654,7 +654,7 @@ export default function Home() {
                           <CheckCircle2 className="h-3 w-3 text-red-600" />
                         </div>
                       </div>
-                      <p className="text-sm text-gray-700 leading-relaxed">
+                      <p className="text-sm text-gray-700 leading-relaxed font-normal">
                         Gaji kompetitif & benefit lengkap
                       </p>
                     </div>
@@ -690,10 +690,10 @@ export default function Home() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                         <div className="absolute bottom-4 left-6">
-                          <DialogTitle className="text-3xl font-bold text-white mb-1">
+                          <DialogTitle className="text-3xl font-medium text-white mb-1">
                             {country.country}
                           </DialogTitle>
-                          <DialogDescription className="text-white/90 text-base">
+                          <DialogDescription className="text-white/90 text-base font-normal">
                             {country.description}
                           </DialogDescription>
                         </div>
@@ -707,11 +707,11 @@ export default function Home() {
                           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                             <Briefcase className="h-5 w-5 text-primary" />
                           </div>
-                          <h3 className="text-xl font-bold text-foreground">Sektor Pekerjaan</h3>
+                          <h3 className="text-xl font-medium text-foreground">Sektor Pekerjaan</h3>
                         </div>
                         <div className="grid sm:grid-cols-2 gap-2">
                           {country.details.sectors.map((sector, idx) => (
-                            <div key={idx} className="flex items-center gap-2 text-foreground/80">
+                            <div key={idx} className="flex items-center gap-2 text-foreground/80 font-normal">
                               <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
                               <span>{sector}</span>
                             </div>
@@ -725,10 +725,10 @@ export default function Home() {
                           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                             <DollarSign className="h-5 w-5 text-primary" />
                           </div>
-                          <h3 className="text-xl font-bold text-foreground">Estimasi Gaji</h3>
+                          <h3 className="text-xl font-medium text-foreground">Estimasi Gaji</h3>
                         </div>
-                        <p className="text-lg font-semibold text-primary">{country.details.salary}</p>
-                        <p className="text-sm text-muted-foreground mt-1">*Tergantung sektor dan pengalaman kerja</p>
+                        <p className="text-lg font-medium text-primary">{country.details.salary}</p>
+                        <p className="text-sm text-muted-foreground mt-1 font-normal">*Tergantung sektor dan pengalaman kerja</p>
                       </div>
 
                       {/* Persyaratan */}
@@ -737,11 +737,11 @@ export default function Home() {
                           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                             <FileText className="h-5 w-5 text-primary" />
                           </div>
-                          <h3 className="text-xl font-bold text-foreground">Persyaratan Umum</h3>
+                          <h3 className="text-xl font-medium text-foreground">Persyaratan Umum</h3>
                         </div>
                         <ul className="space-y-2">
                           {country.details.requirements.map((req, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-foreground/80">
+                            <li key={idx} className="flex items-start gap-2 text-foreground/80 font-normal">
                               <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
                               <span>{req}</span>
                             </li>
@@ -755,11 +755,11 @@ export default function Home() {
                           <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                             <Award className="h-5 w-5 text-primary" />
                           </div>
-                          <h3 className="text-xl font-bold text-foreground">Benefit & Fasilitas</h3>
+                          <h3 className="text-xl font-medium text-foreground">Benefit & Fasilitas</h3>
                         </div>
                         <div className="grid sm:grid-cols-2 gap-2">
                           {country.details.benefits.map((benefit, idx) => (
-                            <div key={idx} className="flex items-center gap-2 text-foreground/80">
+                            <div key={idx} className="flex items-center gap-2 text-foreground/80 font-normal">
                               <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
                               <span>{benefit}</span>
                             </div>
@@ -774,8 +774,8 @@ export default function Home() {
                             <MessageSquare className="h-6 w-6 text-primary" />
                           </div>
                           <div className="flex-1">
-                            <h4 className="font-bold text-foreground mb-2">Tertarik Bekerja di {country.country}?</h4>
-                            <p className="text-sm text-muted-foreground mb-4">
+                            <h4 className="font-medium text-foreground mb-2">Tertarik Bekerja di {country.country}?</h4>
+                            <p className="text-sm text-muted-foreground mb-4 font-normal">
                               Konsultasikan kebutuhan dan persyaratan Anda dengan tim kami secara gratis
                             </p>
                             <Button 
@@ -801,18 +801,18 @@ export default function Home() {
       </section>
 
       {/* Advantages Section - Background putih */}
-      <section id="advantages" className="py-20 bg-white">
+      <section id="advantages" className="py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mb-4">
               Keunggulan Kami
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-normal">
               Mengapa memilih PT. Moza Group Indonesia sebagai mitra perjalanan karir global Anda
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {advantages.map((advantage, index) => {
               const colors = [
                 { 
@@ -849,8 +849,8 @@ export default function Home() {
                         <advantage.icon className={`h-6 w-6 ${color.iconColor}`} />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">{advantage.title}</h3>
-                    <p className="text-white/90 leading-relaxed drop-shadow-sm">{advantage.description}</p>
+                    <h3 className="text-2xl font-medium text-white mb-4 drop-shadow-md">{advantage.title}</h3>
+                    <p className="text-white/90 leading-relaxed drop-shadow-sm font-normal">{advantage.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -858,20 +858,20 @@ export default function Home() {
           </div>
 
           {/* Additional Info Section */}
-          <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="mt-12 md:mt-16 grid md:grid-cols-2 gap-6 md:gap-8">
             <Card className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                     <Building2 className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Tentang P3MI</h3>
+                  <h3 className="text-2xl font-medium text-gray-900">Tentang P3MI</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-gray-600 leading-relaxed mb-4 font-normal">
                   <span className="font-semibold text-gray-900">P3MI (Perusahaan Penempatan Pekerja Migran Indonesia)</span> adalah 
                   lembaga resmi yang memiliki izin dari pemerintah untuk menempatkan tenaga kerja Indonesia ke luar negeri.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed font-normal">
                   PT. Moza Group Indonesia terdaftar resmi sebagai P3MI dengan legalitas lengkap, memastikan setiap proses 
                   penempatan kerja dilakukan sesuai regulasi pemerintah dan memberikan perlindungan maksimal bagi pekerja migran.
                 </p>
@@ -884,9 +884,9 @@ export default function Home() {
                   <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
                     <Users className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Komitmen Kami</h3>
+                  <h3 className="text-2xl font-medium text-gray-900">Komitmen Kami</h3>
                 </div>
-                <ul className="space-y-3 text-gray-600">
+                <ul className="space-y-3 text-gray-600 font-normal">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Pelatihan berbasis kompetensi standar internasional</span>
@@ -915,19 +915,19 @@ export default function Home() {
       </section>
 
       {/* Statistics & Partners Section - Background abu-abu sangat muda */}
-      <section id="statistics" className="py-20 bg-gray-50">
+      <section id="statistics" className="py-16 md:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mb-4">
               Pencapaian & Kemitraan
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-normal">
               Kepercayaan dan hasil nyata dari dedikasi kami dalam menempatkan tenaga kerja profesional Indonesia
             </p>
           </div>
 
           {/* Statistics Cards - Material Design dengan warna */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16">
             <Card className="text-center bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-2xl" data-testid="stat-workers-sent">
               <CardContent className="p-6 md:p-8">
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
@@ -970,26 +970,26 @@ export default function Home() {
           </div>
 
           {/* Partners Section */}
-          <div className="mt-20">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3">
+          <div className="mt-12 md:mt-16 lg:mt-20">
+            <div className="text-center mb-8 md:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-foreground mb-3">
                 Partner Kami
               </h3>
-              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto font-normal">
                 Bekerja sama dengan perusahaan dan lembaga terpercaya di berbagai negara
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <Card className="border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                       <Building2 className="h-6 w-6 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-gray-900">Partner Perusahaan</h4>
+                    <h4 className="text-xl font-medium text-gray-900">Partner Perusahaan</h4>
                   </div>
-                  <ul className="space-y-3 text-gray-600">
+                  <ul className="space-y-3 text-gray-600 font-normal">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <span>Perusahaan manufaktur dan teknologi di Jepang</span>
@@ -1020,9 +1020,9 @@ export default function Home() {
                     <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
                       <GraduationCap className="h-6 w-6 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-gray-900">Partner Pelatihan</h4>
+                    <h4 className="text-xl font-medium text-gray-900">Partner Pelatihan</h4>
                   </div>
-                  <ul className="space-y-3 text-gray-600">
+                  <ul className="space-y-3 text-gray-600 font-normal">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                       <span>Lembaga Sertifikasi Profesi (LSP) terakreditasi</span>
@@ -1053,10 +1053,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-tr from-red-600/20 via-transparent to-pink-600/20"></div>
               <CardContent className="p-8 md:p-12 text-center relative z-10">
                 <div className="max-w-3xl mx-auto">
-                  <h4 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-lg">
+                  <h4 className="text-2xl md:text-3xl font-medium mb-4 drop-shadow-lg">
                     Bergabunglah dengan Ribuan Pekerja Sukses Kami
                   </h4>
-                  <p className="text-white/95 mb-6 text-base md:text-lg drop-shadow-md">
+                  <p className="text-white/95 mb-6 text-base md:text-lg drop-shadow-md font-normal">
                     Wujudkan impian karir global Anda bersama PT. Moza Group Indonesia. 
                     Kami siap membantu Anda dari proses pelatihan hingga penempatan kerja di luar negeri.
                   </p>
@@ -1088,18 +1088,18 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-20 bg-white">
+      <section id="gallery" className="py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mb-4">
               Galeri Kegiatan
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-normal">
               Dokumentasi kegiatan pelatihan, pendampingan, dan keberangkatan pekerja migran Indonesia
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {galleryImages.map((item, index) => (
               <Card
                 key={index}
@@ -1116,9 +1116,9 @@ export default function Home() {
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="flex items-center gap-2 mb-2">
                       <Camera className="h-5 w-5 text-white" />
-                      <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                      <h3 className="text-xl font-medium text-white">{item.title}</h3>
                     </div>
-                    <p className="text-sm text-white/90">{item.description}</p>
+                    <p className="text-sm text-white/90 font-normal">{item.description}</p>
                   </div>
                 </div>
               </Card>
@@ -1126,17 +1126,17 @@ export default function Home() {
           </div>
 
           {/* Office Gallery Section */}
-          <div className="mt-20">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3">
+          <div className="mt-12 md:mt-16 lg:mt-20">
+            <div className="text-center mb-8 md:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-foreground mb-3">
                 Galeri Kantor
               </h3>
-              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto font-normal">
                 Kantor kami yang berlokasi di Tangerang, Banten dengan fasilitas lengkap dan profesional
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {officeGalleryImages.map((item, index) => (
                 <Card
                   key={index}
@@ -1153,9 +1153,9 @@ export default function Home() {
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="flex items-center gap-2 mb-2">
                         <Building2 className="h-5 w-5 text-white" />
-                        <h4 className="text-lg font-bold text-white">{item.title}</h4>
+                        <h4 className="text-lg font-medium text-white">{item.title}</h4>
                       </div>
-                      <p className="text-sm text-white/90">{item.description}</p>
+                      <p className="text-sm text-white/90 font-normal">{item.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -1166,22 +1166,22 @@ export default function Home() {
       </section>
 
       {/* Contact Section - Background abu-abu sangat muda */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-16 md:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-foreground mb-4">
               Hubungi Kami
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-normal">
               Mari wujudkan impian karir global Anda bersama kami. Konsultasi gratis dan terpercaya.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
             {/* Contact Form */}
             <Card className="border border-gray-200 shadow-md bg-white rounded-2xl" data-testid="card-contact-form">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6">Kirim Pesan</h3>
+                <h3 className="text-2xl font-medium text-foreground mb-6">Kirim Pesan</h3>
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <FormField
@@ -1271,18 +1271,18 @@ export default function Home() {
             </Card>
 
             {/* Contact Information */}
-            <div className="space-y-6">
+            <div className="space-y-6 md:space-y-8">
               <Card className="border border-gray-200 shadow-md bg-white rounded-2xl" data-testid="card-contact-info">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Informasi Kontak</h3>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-6">Informasi Kontak</h3>
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                         <MapPin className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Alamat Kantor</h4>
-                        <p className="text-gray-600">
+                        <h4 className="font-medium text-gray-900 mb-1">Alamat Kantor</h4>
+                        <p className="text-gray-600 font-normal">
                           JL Beringin Raya Blok 42 No.75<br />
                           Kota Tangerang, Provinsi Banten<br />
                           Indonesia
@@ -1295,10 +1295,10 @@ export default function Home() {
                         <Phone className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Telepon / WhatsApp</h4>
+                        <h4 className="font-medium text-gray-900 mb-1">Telepon / WhatsApp</h4>
                         <a
                           href="tel:08980422566"
-                          className="text-blue-600 hover:underline"
+                          className="text-blue-600 hover:underline font-normal"
                           data-testid="link-phone"
                         >
                           0898-0422-566
@@ -1311,10 +1311,10 @@ export default function Home() {
                         <Mail className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
+                        <h4 className="font-medium text-gray-900 mb-1">Email</h4>
                         <a
                           href="mailto:mozagroupindonesia@gmail.com"
-                          className="text-blue-600 hover:underline break-all"
+                          className="text-blue-600 hover:underline break-all font-normal"
                           data-testid="link-email"
                         >
                           mozagroupindonesia@gmail.com
@@ -1327,8 +1327,8 @@ export default function Home() {
                         <Clock className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Jam Operasional</h4>
-                        <p className="text-gray-600">
+                        <h4 className="font-medium text-gray-900 mb-1">Jam Operasional</h4>
+                        <p className="text-gray-600 font-normal">
                           Senin - Sabtu: 08:00 - 16:00 WIB<br />
                           Minggu: Tutup
                         </p>
@@ -1343,8 +1343,8 @@ export default function Home() {
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
                     <Shield className="h-10 w-10 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Terdaftar & Berizin Resmi</h3>
-                  <p className="text-white/90">
+                  <h3 className="text-xl font-medium mb-2">Terdaftar & Berizin Resmi</h3>
+                  <p className="text-white/90 font-normal">
                     P3MI (Perusahaan Penempatan Pekerja Migran Indonesia) dengan legalitas lengkap
                   </p>
                 </CardContent>
@@ -1355,10 +1355,10 @@ export default function Home() {
       </section>
 
       {/* Footer - Section berwarna merah gradasi */}
-      <footer className="bg-gradient-to-br from-red-900 via-rose-900 to-red-800 text-white py-12 relative overflow-hidden">
+      <footer className="bg-gradient-to-br from-red-900 via-rose-900 to-red-800 text-white py-10 md:py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-tr from-red-950/50 via-transparent to-rose-950/50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
@@ -1427,8 +1427,8 @@ export default function Home() {
                 </li>
               </ul>
               
-              <h4 className="font-semibold mb-3 mt-6 text-white">Ikuti Kami</h4>
-              <div className="flex gap-3">
+              <h4 className="font-semibold mb-3 mt-4 md:mt-6 text-white">Ikuti Kami</h4>
+              <div className="flex gap-2 md:gap-3">
                 <a 
                   href="https://www.instagram.com/mozap3mi/" 
                   target="_blank" 
@@ -1469,7 +1469,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-white/20 pt-8 text-center relative z-10">
+          <div className="border-t border-white/20 pt-6 md:pt-8 text-center relative z-10">
             <p className="text-sm text-white/80">
               © 2025 PT. Moza Group Indonesia. All rights reserved.
             </p>
