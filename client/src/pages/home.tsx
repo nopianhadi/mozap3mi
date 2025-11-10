@@ -65,6 +65,7 @@ import officeImage2 from "@assets/generated_images/IMG-20251110-WA0002_enhanced.
 import officeImage3 from "@assets/generated_images/IMG-20251110-WA0003_enhanced.jpg";
 import officeImage4 from "@assets/generated_images/IMG-20251110-WA0004_enhanced.jpg";
 import officeImage5 from "@assets/generated_images/IMG-20251110-WA0005_enhanced.jpg";
+import heroBackgroundImage from "@assets/generated_images/Europe_business_district_modern_fcf996c3.png";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Nama harus minimal 2 karakter"),
@@ -330,33 +331,42 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Material Design dengan gradient merah */}
-      <section id="home" className="relative min-h-screen flex items-center pt-16 bg-gradient-to-br from-red-600 via-red-500 to-rose-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
+      <section id="home" className="relative min-h-screen flex items-center pt-16 bg-gray-900">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroBackgroundImage} 
+            alt="Hero Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 w-full">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6 md:space-y-8">
               <div>
-                <span className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-xs md:text-sm font-medium text-white shadow-lg" data-testid="badge-registered">
-                  <Award className="h-3 w-3 md:h-4 md:w-4" />
+                <span className="inline-flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 bg-red-600 backdrop-blur-md border-2 border-red-700 rounded-full text-sm md:text-base font-bold text-white shadow-2xl" data-testid="badge-registered">
+                  <Award className="h-4 w-4 md:h-5 md:w-5" />
                   Terdaftar Resmi P3MI 2025
                 </span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white leading-tight drop-shadow-lg" data-testid="text-company-name">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight" data-testid="text-company-name">
                 PT. Moza Group
-                <span className="text-white drop-shadow-xl"> Indonesia</span>
+                <span className="text-red-600"> Indonesia</span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed drop-shadow-md font-normal" data-testid="text-tagline">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-900 leading-relaxed font-semibold" data-testid="text-tagline">
                 Dari Moza ke dunia kerja global, profesional berkarya Indonesia mendunia
               </p>
 
               <div className="space-y-3 md:space-y-4">
-                <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md font-normal" data-testid="text-description">
-                  <span className="font-medium text-white">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
+                <p className="text-sm sm:text-base md:text-lg text-gray-900 font-medium" data-testid="text-description">
+                  <span className="font-bold text-blue-900">PT. Moza Group Indonesia</span> adalah Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) 
                   terpercaya yang berdomisili di Kota Tangerang, Provinsi Banten.
                 </p>
-                <p className="text-sm sm:text-base text-white/85 drop-shadow-md font-normal">
+                <p className="text-sm sm:text-base text-gray-800 font-medium">
                   Kami didirikan untuk membantu calon pekerja Indonesia mencari peluang bekerja di luar negeri dengan 
                   memberikan pelatihan berbasis kompetensi, pendampingan penuh, dan jaminan keamanan hingga penempatan kerja.
                 </p>
@@ -380,20 +390,20 @@ export default function Home() {
                 <Button
                   size="lg"
                   onClick={() => scrollToSection("about")}
-                  className="w-full sm:min-w-[180px] md:min-w-[200px] bg-white text-brand-red hover:bg-white/90 shadow-xl font-bold"
+                  className="w-full sm:min-w-[180px] md:min-w-[200px] bg-red-600 text-white hover:bg-red-700 shadow-2xl font-bold text-base md:text-lg border-2 border-red-700"
                   data-testid="button-learn-more"
                 >
-                  <Users className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                  <Users className="mr-2 h-5 w-5 md:h-6 md:w-6" />
                   Pelajari Lebih Lanjut
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   onClick={() => scrollToSection("contact")}
-                  className="w-full sm:min-w-[180px] md:min-w-[200px] bg-white/20 backdrop-blur-md border-white/40 text-white hover:bg-white/30 shadow-xl font-bold"
+                  className="w-full sm:min-w-[180px] md:min-w-[200px] bg-blue-900 border-2 border-blue-950 text-white hover:bg-blue-950 shadow-2xl font-bold text-base md:text-lg"
                   data-testid="button-consultation"
                 >
-                  <MessageSquare className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                  <MessageSquare className="mr-2 h-5 w-5 md:h-6 md:w-6" />
                   Konsultasi Gratis
                 </Button>
               </div>
